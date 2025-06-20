@@ -31,6 +31,4 @@ HANDS ON 3
 - call that func in main and pass in a value of type secretAgent
 SOLUTION
 
-Thank you to @BenCarter78 for that cool solution.
-
-ADDITIONAL INFO
+Thank you to @BenCarter78 for that cool solution..
