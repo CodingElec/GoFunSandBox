@@ -60,4 +60,11 @@ func main() {
 	agent.speak()
 	agent2.person.speak()
 	agent2.speak()
+
+	println("----- from the polymorph -----")
+
+	speaks(investigado)
+	speaks(agent)
+	speaks(agent2.person)
+	speaks(agent2)
 }

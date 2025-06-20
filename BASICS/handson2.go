@@ -19,3 +19,11 @@ func (p person) speak() {
 func (sa sagent) speak() {
 	fmt.Println("Good morning, from", sa.fname, sa.lname, "my badge number is", sa.agentNumber)
 }
+
+type thingsThatSpeak interface {
+	speak()
+}
+
+func speaks(t thingsThatSpeak) {
+	t.speak()
+}
