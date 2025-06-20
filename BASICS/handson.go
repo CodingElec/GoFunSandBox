@@ -31,10 +31,33 @@ func area(sh shape) {
 
 func main() {
 
-	sq := square{2}
-	circ := circle{2}
-	fmt.Printf("the side of the square is %.2f, and the radius is %.2f \n", sq.side, circ.radius)
-	fmt.Printf("Area of the square: %.2f, area of the circle: %.2f\n", sq.calcArea(), circ.calcArea())
-	area(sq)
-	area(circ)
+	// sq := square{2}
+	// circ := circle{2}
+	// fmt.Printf("the side of the square is %.2f, and the radius is %.2f \n", sq.side, circ.radius)
+	// fmt.Printf("Area of the square: %.2f, area of the circle: %.2f\n", sq.calcArea(), circ.calcArea())
+	// area(sq)
+	// area(circ)
+
+	investigado := person{
+		"Iron",
+		"man",
+	}
+
+	agent := sagent{
+		person: person{
+			fname: "Agent",
+			lname: "Colton",
+		},
+		agentNumber: 123456,
+	}
+
+	agent2 := sagent{
+		person:      investigado,
+		agentNumber: 12345678,
+	}
+
+	investigado.speak()
+	agent.speak()
+	agent2.person.speak()
+	agent2.speak()
 }
